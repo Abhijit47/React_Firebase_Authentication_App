@@ -11,7 +11,7 @@ import {
   GithubAuthProvider,
   FacebookAuthProvider,
   TwitterAuthProvider,
-  signInWithRedirect
+  signInWithRedirect,
 } from 'firebase/auth';
 import { auth } from '../firebase';
 
@@ -149,7 +149,7 @@ export const UserContextProvider = ({ children }) => {
     signInWithGoogle,
     signInWithGithub,
     signInWithFacebook,
-    signInWithTwitter
+    signInWithTwitter,
   };
   return <UserContext.Provider value={contextValue}>
     {children}

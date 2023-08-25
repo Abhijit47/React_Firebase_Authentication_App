@@ -13,9 +13,7 @@ import {
 
 const UserProfile = ({ user }) => {
   return (
-    <div
-      className='rounded-2 pb-5 shadow-3-strong'
-      style={{ backgroundColor: '#9de2ff' }}>
+    <div className='rounded-2 pb-5'>
       <MDBContainer>
         <MDBRow className='justify-content-center'>
           <MDBCol md='9' lg='7' xl='5' className='mt-5'>

@@ -84,7 +84,7 @@ const ForgotPassword = () => {
               <MDBCol className='d-flex justify-content-center'>
                 <MDBCheckbox
                   id='form1Example3'
-                  label='Accept our terms and condition*'
+                  label='Accept terms and conditions*'
                   checked={isChecked}
                   onChange={handleCheck}
                 />

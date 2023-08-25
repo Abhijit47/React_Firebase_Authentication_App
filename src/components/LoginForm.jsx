@@ -89,7 +89,7 @@ const LoginForm = () => {
           <MDBRow className='justify-content-center'>
             <MDBCol
               lg={6}
-              md={6}
+              md={8}
               sm={10}
               className='bg-light p-5 col-11 shadow-3-strong'>
               <form onSubmit={handleSubmit}>
@@ -110,7 +110,11 @@ const LoginForm = () => {
                 />
 
                 <MDBRow className='mb-4'>
-                  <MDBCol className='d-flex justify-content-center'>
+                  <MDBCol
+                    lg={6}
+                    md={6}
+                    sm={6}
+                    className='col-12 hstack justify-content-center'>
                     <MDBCheckbox
                       id='form2Example3'
                       label='Remember me'
@@ -118,7 +122,7 @@ const LoginForm = () => {
                       onChange={handleCheck}
                     />
                   </MDBCol>
-                  <MDBCol>
+                  <MDBCol lg={6} md={6} sm={6} className='col-12'>
                     <Link to='/resetpassword'>Forgot password?</Link>
                   </MDBCol>
                 </MDBRow>

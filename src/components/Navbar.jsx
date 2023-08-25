@@ -37,11 +37,11 @@ const Navbar = () => {
           </MDBNavbarToggler>
           <MDBCollapse show={showNavbar} navbar id='navbarColor02'>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0 gap-2 justify-content-end align-items-center'>
-              <MDBNavbarItem className='active'>
+              {/* <MDBNavbarItem className='active'>
                 <Link to='/' className='text-light'>
                   Home
                 </Link>
-              </MDBNavbarItem>
+              </MDBNavbarItem> */}
               {!user ? (
                 <>
                   <MDBNavbarItem>

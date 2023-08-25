@@ -8,6 +8,7 @@ import {
   MDBCheckbox,
   MDBContainer,
   MDBSpinner,
+  MDBTypography,
 } from 'mdb-react-ui-kit';
 import { Link, useNavigate } from 'react-router-dom';
 import { useUserContext } from '../context/userContext';
@@ -36,7 +37,7 @@ const RegistrationForm = () => {
     if (user) {
       navigate('/dashboard');
     } else {
-      navigate('/login');
+      navigate('/register');
     }
   }, [navigate, user]);
 
@@ -92,16 +93,18 @@ const RegistrationForm = () => {
         </MDBContainer>
       ) : (
         <MDBContainer className='text-center'>
-          <h2 className='text-center fw-bold'>Register</h2>
+          <MDBTypography variant='h2' className='text-center fw-bold'>
+            Register
+          </MDBTypography>
           <MDBRow className='justify-content-center'>
             <MDBCol
               lg={6}
-              md={6}
+              md={8}
               sm={10}
               className='bg-light p-5 col-11 shadow-3-strong'>
               <form onSubmit={handleSubmit}>
                 <MDBRow className='mb-4'>
-                  <MDBCol>
+                  <MDBCol lg={6} md={12} className='mb-lg-0 mb-4'>
                     <MDBInput
                       label='First name'
                       id='firstName'
@@ -127,6 +130,7 @@ const RegistrationForm = () => {
                   id='email'
                   label='Email address'
                   name='email'
+                  autoComplete='on'
                   type={'email'}
                   ref={emailRef}
                   required
